@@ -18,6 +18,7 @@ const showProducts = (products) => {
       </div>
       <h3>${product.title}</h3>
       <p>Category: ${product.category}</p>
+      <p>Rating: ${product.rating.rate}, Rated By: ${product.rating.count} users</p>
       <h2>Price: $ ${product.price}</h2>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
       <button id="details-btn" class="btn btn-danger">Details</button></div>
@@ -51,7 +52,13 @@ const updatePrice = (id, value) => {
 
 // set innerText function
 const setInnerText = (id, value) => {
-  document.getElementById(id).innerText = Math.round(value);
+  if (id === 'total-tax') {
+    document.getElementById(id).innerText = value.toFixed(2);
+  }
+  else {
+    document.getElementById(id).innerText = Math.round(value);
+  }
+
 };
 
 // update delivery charge and total Tax

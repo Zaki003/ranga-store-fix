@@ -12,9 +12,12 @@ body {
   outline: none;
   border: none;
 }
+#input-field{
+  width: 220px;
+}
 .search-box {
   border: 1px solid rgb(3, 118, 211);
-  width: 281px;
+  width: 300px;
   border-radius: 5px;
   margin: auto;
   margin-top: 50px;
@@ -23,7 +26,7 @@ body {
 .search-button {
   padding: 10px 50px;
   border-radius: 25px;
-  margin-left: 25px;
+  margin-left: 4px;
 }
 #all-products {
   display: grid;
@@ -36,6 +39,9 @@ body {
   justify-content: center;
 }
 .single-product {
+  margin: 5px;
+  border-radius: 10px;
+  background-color: skyblue;
   padding: 10px;
   transition: 0.6s;
 }
