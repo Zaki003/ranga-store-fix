@@ -13,11 +13,14 @@ body {
   border: none;
 }
 #input-field{
-  width: 220px;
+  width: 320px;
+}
+#input-field:focus{
+  outline:rgba(3, 117, 211, 0.384) solid 3px;
 }
 .search-box {
   border: 1px solid rgb(3, 118, 211);
-  width: 300px;
+  width: 400px;
   border-radius: 5px;
   margin: auto;
   margin-top: 50px;
@@ -27,6 +30,18 @@ body {
   padding: 10px 50px;
   border-radius: 25px;
   margin-left: 4px;
+}
+/* single product detail display section styles */
+#details-section{
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+  background-color: rgba(188, 143, 143, 0.644);
+  justify-content: space-evenly;
+}
+#details-section >div>img{
+  border-radius: 10px;
+  margin-right: 20px;
 }
 #all-products {
   display: grid;
